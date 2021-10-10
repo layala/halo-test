@@ -1,0 +1,31 @@
+$halo-header-padding: 10px 30px;
+$halo-logo-size: 20px;
+$halo-logo-border: 5px solid #EC3743;
+$halo-logo-border-radius: 50%;
+$halo-logo-padding: 10px;
+$halo-name-font-family: Arial, Helvetica, sans-serif;
+$halo-name-font-size: 20px;
+$halo-name-font-color: #2b2b2b;
+$halo-name-font-weight: 100;
+
+.halo-header {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    padding: $halo-header-padding;
+    &__logo {
+        width: $halo-logo-size;
+        height: $halo-logo-size;
+        border-radius: $halo-logo-border-radius;
+        border: $halo-logo-border;
+        display: inline-block;
+    }
+    &__name {
+        font-family: $halo-name-font-family;
+        font-size: $halo-name-font-size;
+        font-weight: $halo-name-font-weight;
+        display: inline;
+        padding: $halo-logo-padding;
+        color: $halo-name-font-color;
+    }
+}
