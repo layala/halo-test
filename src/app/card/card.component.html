@@ -1,0 +1,9 @@
+<div class="search-results-container" infinite-scroll [scrollWindow]="false" (scrolled)="onScrollDown()" (scrolledUp)="onScrollUp()">
+    <div class="card" *ngFor="let m of movies">
+        <img [src]="m.image" class="imgs">
+       <div class="info">
+           <h1>{{m.title}}</h1>
+           <p>{{m.description}}</p>
+       </div>
+    </div>
+</div>
